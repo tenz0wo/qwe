@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:controller="application.DeleteDataController"
+     xmlns:fx="http://javafx.com/fxml" alignment="CENTER" spacing="10">
+        
+    <TableView fx:id="tableView">
+        <columns>
+            <TableColumn fx:id="startDate" text="Дата" />
+            <TableColumn fx:id="homeTechType" text="Тип" />
+            <TableColumn fx:id="problemDescryption" text="Описание" />
+            <TableColumn fx:id="requestStatus" text="Статус" />
+        </columns>
+    </TableView>
+    <Button text="Удалить заявку" onAction="#handleDeleteButtonAction"/>
+    <Button text="Обновить таблицу" onAction="#updateRequest"/>
+    
+</VBox>
