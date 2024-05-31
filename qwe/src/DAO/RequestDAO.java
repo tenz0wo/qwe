@@ -26,6 +26,7 @@ public class RequestDAO {
             stmt.setString(4, request.getProblemDescryption());
             stmt.setString(5, request.getRequestStatus());
             stmt.setString(6, request.getClientID());
+
             stmt.executeUpdate();
         }
     }

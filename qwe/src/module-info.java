@@ -6,4 +6,7 @@ module qwe {
 	requires org.junit.jupiter.api;
 
 	opens application to javafx.graphics, javafx.fxml, javafx.base;
+	
+	opens models to javafx.graphics, javafx.fxml, javafx.base;
+
 }
